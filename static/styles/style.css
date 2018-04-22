@@ -1,0 +1,309 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a:focus,
+input[type="button"]:focus,
+button:focus {
+  outline: none;
+}
+
+body {
+  min-width: 1280px;
+  margin: 0;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu__link {
+  margin-right: 10px;
+  text-decoration: none;
+  margin-top: 46px;
+  margin-left: 27px;
+  color: #1a1a1d;
+  font-family: "Nunito", sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.87px;
+}
+
+.header-menu__button-menu {
+  background-image: url('../images/menu-icon.png');
+  height: 14px;
+  width: 20px;
+  margin-top: 52px;
+  margin-left: 41px;
+  border: none;
+  cursor: pointer;
+}
+
+.header__button-search {
+  background-image: url('../images/search-icon@1.5x.png');
+  height: 20px;
+  width: 20px;
+  margin-top: 52px;
+  margin-right: 41px;
+  border: none;
+  cursor: pointer;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 20;
+  background-image: url('../images/logo.png');
+  height: 21px;
+  width: 150px;
+  margin-top: -27px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+}
+
+.social-buttons {
+  margin-top: 120px;
+  margin-left: 41px;
+  display: flex;
+  justify-content: space-between;
+  width: 178px;
+}
+
+.social-buttons--header {
+  flex-direction: column;
+  position: absolute;
+}
+
+.social-button {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.social-button--fb {
+  background-image: url('../images/social-icons@1.5x.png');
+}
+
+.social-button--inst {
+  background-image: url('../images/16px-logo-instagram@1.5x.png');
+}
+
+.social-button--yt {
+  background-image: url('../images/social-icons@1.5x.png');
+  background-position: 0px 67px;
+}
+
+.social-button--tw {
+  background-image: url('../images/social-icons@1.5x.png');
+  background-position: 0px 16px;
+}
+
+.header__content {
+  position: relative;
+  margin-top: 0px;
+  margin-left: 161px;
+  line-height: 66px;
+  letter-spacing: 1.35px;
+  z-index: 3;
+}
+
+.header__central-image {
+  position: absolute;
+  top: 180px;
+  left: 213px;
+  background-image: url('../images/put-your-image-here.png');
+  width: 748px;
+  height: 540px;
+  margin-left: 0px;
+  margin-top: 0px;
+  z-index: 2;
+}
+
+.header__side-image {
+  position: absolute;
+  top: 0px;
+  left: 767px;
+  background-image: url('../images/wrapper-image.png');
+  width: 513px;
+  height: 480px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.header__name {
+  margin-top: 289px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 67px;
+  font-weight: normal;
+}
+
+.header__text {
+  font-family: "Nunito-SemiBold";
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2.2px;
+}
+
+.header__button-view {
+  background-color: #b4d3d3;
+  width: 173px;
+  height: 73px;
+  border: none;
+  color: #fff;
+  font-family: "Nunito-ExtraBold";
+  font-size: 9px;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  margin-left: 41px;
+  margin-top: 77px;
+  cursor: pointer;
+}
+
+/* .header__button-view::after {
+    content: "";
+    position: relative;
+    z-index: 5;
+    display: block;
+    width: 73px;
+    height: 73px;
+    background-color: #fff;
+    background-image: url('../images/play.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: none;
+    margin-left: 41px;
+    margin-top: 10px;
+} это нужно поправить */
+
+.people__categories {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.people__category {
+  margin-top: 47px;
+  padding-left: 19px;
+  padding-right: 19px;
+  text-transform: uppercase;
+  font-style: "Nunito-ExtraBold";
+  letter-spacing: 1.6px;
+  font-size: 8px;
+  border: none;
+  line-height: 26px;
+}
+
+.people__category:hover {
+  border-bottom: 2px solid #1a1a1d;
+  font-weight: 700;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.people__talents {
+  margin-top: 56px;
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.people__header-row {
+  display: table-header-group;
+}
+
+.people__footer-row {
+  display: table-footer-group;
+}
+
+.people__cell {
+  display: table-cell;
+  width: 280px;
+  height: 327px;
+  text-align: center;
+  vertical-align: bottom;
+  padding-bottom: 26px;
+}
+
+.people__cell--1 {
+  background-image: url('../images/overlay 3@1.5x.png');
+}
+
+.people__cell--2 {
+  background-image: url('../images/overlay 1.png');
+}
+
+.people__cell--3 {
+  background-image: url('../images/overlay.png');
+}
+
+.people__cell--4 {
+  background-image: url('../images/overlay 1.png');
+}
+
+.people__cell--5 {
+  background-image: url('../images/overlay 1.png');
+}
+
+.people__cell--6 {
+  background-image: url('../images/overlay 3@1.5x.png');
+}
+
+.people__cell--7 {
+  background-image: url('../images/overlay 1.png');
+}
+
+.people__cell--8 {
+  background-image: url('../images/overlay 3@1.5x.png');
+}
+
+.people__name {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.6px;
+}
+
+.people__info {
+  font-family: "Nunito-ExtraBold";
+  font-size: 8px;
+  font-weight: 400;
+  color: #8c8c94;
+  line-height: 19px;
+  padding-bottom: 34px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.people__button {
+  cursor: pointer;
+  display: flex;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 21px;
+  background-color: #b4d3d3;
+  font-family: "Nunito-ExtraBold";
+  line-height: 20px;
+  letter-spacing: 2px;
+  font-size: 9px;
+  padding: 10px 26px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 38px;
+}
