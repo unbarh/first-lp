@@ -15,6 +15,11 @@ body {
   margin: 0;
 }
 
+.header {
+  width: 100%;
+  background: url('../images/put-your-image-here.png') no-repeat 320px 270px, url('../images/wrapper-image.png') no-repeat 1151px 0px;
+}
+
 .header-menu {
   display: flex;
   justify-content: space-between;
@@ -66,13 +71,10 @@ body {
 }
 
 .logo--header {
-  position: relative;
   margin-top: -32px;
   margin-left: auto;
   margin-right: auto;
-  z-index: 10;
 }
-
 
 .social-buttons {
   display: flex;
@@ -83,7 +85,6 @@ body {
   margin-top: 181px;
   margin-left: 65px;
   flex-direction: column;
-  position: absolute;
 }
 
 .social-button {
@@ -114,34 +115,12 @@ body {
   height: 14px;
 }
 
-.header__central-image {
-  position: absolute;
-  top: 269px;
-  left: 320px;
-  background-image: url('../images/put-your-image-here.png');
-  width: 1121px;
-  height: 810px;
-  z-index: 2;
-}
-
-.header__side-image {
-  position: absolute;
-  left: 1150px;
-  top: 0px;
-  background-image: url('../images/wrapper-image.png');
-  width: 769px;
-  height: 720px;
-}
-
 .header__content {
-  position: relative;
-  /* margin-top: 90px; */
   margin-left: 240px;
-  z-index: 3;
 }
 
 .header__name {
-  margin-top: 432px;
+  margin-top: 35px;
   margin-bottom: 62px;
   font-family: "Poppins-Regular";
   font-size: 101px;
@@ -155,6 +134,10 @@ body {
   text-transform: uppercase;
   font-size: 17px;
   letter-spacing: 3.4px;
+}
+
+.header__buttons {
+  display: flex;
 }
 
 .header__button-view {
@@ -173,21 +156,16 @@ body {
   cursor: pointer;
 }
 
-/* .header__button-view::after {
-    content: "";
-    position: relative;
-    z-index: 5;
-    display: block;
-    width: 73px;
-    height: 73px;
-    background-color: #fff;
-    background-image: url('../images/play.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    border: none;
-    margin-left: 41px;
-    margin-top: 10px;
-} ÑÑ‚Ð¾ Ð½ÑƒÐ¶Ð½Ð¾ Ð¿Ð¾Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ */
+.header__button-play {
+  width: 110px;
+  height: 110px;
+  border: none;
+  background-image: url('../images/play.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-top: 152px;
+  cursor: pointer;
+}
 
 .people__categories {
   display: flex;
@@ -196,6 +174,7 @@ body {
 }
 
 .people__category {
+  display: inline-block;
   margin-top: 80px;
   padding-left: 29px;
   padding-right: 28px;
@@ -216,7 +195,7 @@ body {
 }
 
 .people__talents {
-  margin-top: 78px;
+  margin-top: 76px;
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -237,6 +216,7 @@ body {
   height: 490px;
   text-align: center;
   vertical-align: bottom;
+  padding-bottom: 50px;
 }
 
 .people__cell--1 {
@@ -275,8 +255,9 @@ body {
   font-family: 'Poppins-Regular';
   font-size: 30px;
   font-weight: 400;
-  line-height: 100px;
+  line-height: 49px;
   color: #fff;
+  margin: 0;
   letter-spacing: 0.6px;
 }
 
@@ -285,31 +266,32 @@ body {
   font-size: 12px;
   font-weight: 400;
   color: #8c8c94;
-  padding-bottom: 34px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .people__button {
   cursor: pointer;
-  display: flex;
+  width: 220px;
+  height: 60px;
   text-transform: uppercase;
   color: #fff;
   border: none;
   border-radius: 50px;
   background-color: #b4d3d3;
   font-family: "Nunito-ExtraBold";
-  line-height: 30px;
   letter-spacing: 2.8px;
   font-size: 14px;
-  padding: 20px 63px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 59px;
+  margin-left: 850px;
+  margin-bottom: 63px;
 }
 
 .news {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .news__title {
@@ -318,19 +300,23 @@ body {
   font-weight: 400;
   line-height: 79px;
   color: #1a1a1d;
+  margin-bottom: 101px;
 }
 
 .news__units {
-  margin-left: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  margin-left: 122px;
 }
 
 .news__unit-small {
   width: 525px;
   height: 142px;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-right: 50px;
   margin-bottom: 50px;
 }
@@ -338,7 +324,8 @@ body {
 .news__unit-small-image {
   width: 200px;
   height: 139px;
-  background-image: url(../images/news-small-image.png)
+  background-image: url(../images/news-small-image.png);
+  margin-right: 41px;
 }
 
 .news__unit-title {
@@ -346,6 +333,7 @@ body {
   font-family: "Poppins-Medium";
   font-weight: 500;
   line-height: 36px;
+  min-width: 294px;
   color: #1a1a1d;
   margin: 0;
 }
@@ -354,12 +342,15 @@ body {
   font-size: 16px;
   font-family: "Nunito-Regular";
   font-weight: 400;
-  line-height: 40px;
   color: #77777e;
   margin: 0;
 }
 
 .news__unit-large {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 1104px;
   height: 520px;
   background-image: url('../images/put-your-image-here-copy-2@2x.png');
@@ -378,10 +369,15 @@ body {
   text-transform: uppercase;
   letter-spacing: 2.8px;
   text-align: center;
-  padding-top: 14px;
+  margin-left: 458px;
+  margin-top: 10px;
+  padding-top: 15px;
 }
 
 .news__unit-large-gradient {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   width: 420px;
   height: 520px;
   background-color: #b4d3d3;
@@ -389,9 +385,18 @@ body {
   opacity: 0.5;
 }
 
+.news__unit-title--large {
+  margin-left: 60px;
+}
+
+.news__unit-data--large {
+  margin-left: 60px;
+}
+
 .news__unit-middle {
   width: 527px;
   height: 424px;
+  margin-top: -471px;
   margin-right: 50px;
   margin-bottom: 50px;
 }
@@ -400,34 +405,41 @@ body {
   width: 527px;
   height: 286px;
   background-image: url('../images/umit-middle-image.png');
+  margin-bottom: 27px;
 }
 
 .news__video {
   width: 527px;
   height: 422px;
   background-image: url('../images/news__video.png');
+  margin-top: -471px;
   margin-right: 50px;
   margin-bottom: 50px;
 }
 
 .news__slider {
   width: 527px;
-  height: 856px;
-  background-image: url('../images/news__slider.png');
+  height: 992px;
   margin-right: 50px;
   margin-bottom: 50px;
+}
+
+.news__unit-slide {
+  width: 527px;
+  height: 856px;
+  background-image: url('../images/news__slider.png');
 }
 
 .footer {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 113px;
 }
 
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-
 }
 
 .logo--footer {
@@ -449,7 +461,7 @@ body {
   padding-right: 56px;
   background-image: url('../images/footer__email.png');
   background-repeat: no-repeat;
-  background-position: 337px 7px ;
+  background-position: 337px 7px;
 }
 
 .footer__line {
