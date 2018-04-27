@@ -17,7 +17,9 @@ body {
 
 .header {
   width: 100%;
-  background: url('../images/put-your-image-here.png') no-repeat 320px 270px, url('../images/wrapper-image.png') no-repeat 1151px 0px;
+  background: 
+    url('../images/header__central-image.png') no-repeat 320px 270px, 
+    url('../images/header__second-image.png') no-repeat 1151px 0px;
 }
 
 .header-menu {
@@ -96,21 +98,22 @@ body {
 }
 
 .social-button--fb {
-  background-image: url('../images/social-icons@1.5x.png');
+  background-image: url('../images/social-icons.png');
 }
 
 .social-button--inst {
-  background-image: url('../images/16px-logo-instagram@1.5x.png');
+  background-image: url('../images/social-icons.png');
+  background-position: 0px 122px;
 }
 
 .social-button--yt {
-  background-image: url('../images/social-icons@1.5x.png');
+  background-image: url('../images/social-icons.png');
   background-position: 0px 66px;
   height: 12px;
 }
 
 .social-button--tw {
-  background-image: url('../images/social-icons@1.5x.png');
+  background-image: url('../images/social-icons.png');
   background-position: 0px 14px;
   height: 14px;
 }
@@ -120,8 +123,8 @@ body {
 }
 
 .header__name {
-  margin-top: 35px;
-  margin-bottom: 62px;
+  margin-top: 32px;
+  margin-bottom: 64px;
   font-family: "Poppins-Regular";
   font-size: 101px;
   font-weight: 400;
@@ -160,7 +163,7 @@ body {
   width: 110px;
   height: 110px;
   border: none;
-  background-image: url('../images/play.png');
+  background-image: url('../images/header__button-play.png');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin-top: 152px;
@@ -175,27 +178,28 @@ body {
 
 .people__category {
   display: inline-block;
-  margin-top: 80px;
+  margin-top: 82px;
   padding-left: 29px;
   padding-right: 28px;
   text-transform: uppercase;
-  font-style: "Nunito-ExtraBold";
+  font-family: "Nunito-ExtraBold";
   font-weight: 400;
   letter-spacing: 2.4px;
   font-size: 12px;
   border: none;
-  line-height: 48px;
+  line-height: 42px;
 }
 
 .people__category:hover {
-  border-bottom: 2px solid #1a1a1d;
-  font-weight: 700;
+  border-bottom: 1px solid #1a1a1d;
+  font-weight: bold;
   transition-duration: 1s;
   cursor: pointer;
+  letter-spacing: 2.2px;
 }
 
 .people__talents {
-  margin-top: 76px;
+  margin-top: 82px;
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -220,11 +224,11 @@ body {
 }
 
 .people__cell--1 {
-  background-image: url('../images/overlay 3@1.5x.png');
+  background-image: url('../images/overlay-2.png');
 }
 
 .people__cell--2 {
-  background-image: url('../images/overlay 1.png');
+  background-image: url('../images/overlay-1.png');
 }
 
 .people__cell--3 {
@@ -232,23 +236,35 @@ body {
 }
 
 .people__cell--4 {
-  background-image: url('../images/overlay 1.png');
+  background-image: url('../images/overlay-1.png');
 }
 
 .people__cell--5 {
-  background-image: url('../images/overlay 1.png');
+  background-image: url('../images/overlay-1.png');
 }
 
 .people__cell--6 {
-  background-image: url('../images/overlay 3@1.5x.png');
+  background-image: url('../images/overlay-2.png');
 }
 
 .people__cell--7 {
-  background-image: url('../images/overlay 1.png');
+  background-image: url('../images/overlay-1.png');
 }
 
 .people__cell--8 {
-  background-image: url('../images/overlay 3@1.5x.png');
+  background-image: url('../images/overlay-2.png');
+}
+
+.people__button-open {
+  position: relative;
+  top: -296px;
+  left: 162px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #b4d3d3 url('../images/people__button-open.png') no-repeat 50% 50%;
 }
 
 .people__name {
@@ -300,14 +316,21 @@ body {
   font-weight: 400;
   line-height: 79px;
   color: #1a1a1d;
-  margin-bottom: 101px;
+  margin-bottom: 8px;
+}
+
+.news__line {
+  margin: 24px 0px 69px 0px;
+  border-top: 1px solid black;
+  width: 150px;
 }
 
 .news__units {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-left: 122px;
+  margin-left: 120px;
+  margin-bottom: 118px;
 }
 
 .news__unit-small {
@@ -316,15 +339,15 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-right: 50px;
-  margin-bottom: 50px;
+  justify-content: space-between;
+  margin-right: 52px;
+  margin-bottom: 46px;
 }
 
 .news__unit-small-image {
   width: 200px;
   height: 139px;
-  background-image: url(../images/news-small-image.png);
+  background-image: url('../images/news__small-image.png');
   margin-right: 41px;
 }
 
@@ -332,10 +355,10 @@ body {
   font-size: 24px;
   font-family: "Poppins-Medium";
   font-weight: 500;
-  line-height: 36px;
   min-width: 294px;
   color: #1a1a1d;
   margin: 0;
+  letter-spacing: 0.5px;
 }
 
 .news__unit-data {
@@ -344,6 +367,7 @@ body {
   font-weight: 400;
   color: #77777e;
   margin: 0;
+  line-height: 10px;
 }
 
 .news__unit-large {
@@ -353,7 +377,7 @@ body {
   flex-wrap: wrap;
   width: 1104px;
   height: 520px;
-  background-image: url('../images/put-your-image-here-copy-2@2x.png');
+  background-image: url('../images/news__unite-large-image.png');
   margin-right: 50px;
   margin-bottom: 50px;
 }
@@ -370,14 +394,15 @@ body {
   letter-spacing: 2.8px;
   text-align: center;
   margin-left: 458px;
-  margin-top: 10px;
+  margin-top: 11px;
   padding-top: 15px;
 }
 
 .news__unit-large-gradient {
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
   width: 420px;
   height: 520px;
   background-color: #b4d3d3;
@@ -385,15 +410,34 @@ body {
   opacity: 0.5;
 }
 
+.news__unit-large-button {
+    width: 32px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    margin-left: 64px;
+    margin-bottom: 41px;
+    background: transparent url('../images/news__unit-large-button.png') no-repeat 50% 50%;
+}
+
 .news__unit-title--large {
-  margin-left: 60px;
+  margin-left: 59px;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 50px;
+  color: #fff;
 }
 
 .news__unit-data--large {
   margin-left: 60px;
+  margin-bottom: 57px;
+  color: #fff;
 }
 
 .news__unit-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 527px;
   height: 424px;
   margin-top: -471px;
@@ -404,11 +448,13 @@ body {
 .news__unit-middle-image {
   width: 527px;
   height: 286px;
-  background-image: url('../images/umit-middle-image.png');
-  margin-bottom: 27px;
+  background-image: url('../images/news__unit-middle-image.png');
+  margin-bottom: 4px;
 }
 
 .news__video {
+  display: flex;
+  align-items: flex-end;
   width: 527px;
   height: 422px;
   background-image: url('../images/news__video.png');
@@ -417,7 +463,27 @@ body {
   margin-bottom: 50px;
 }
 
+.news__video-play-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Nunito-ExtraBold";
+  font-weight: 400;
+  letter-spacing: 2.8px;
+  color: #fff;
+  width: 225px;
+  height: 90px;
+  text-align: end;
+  cursor: pointer;
+  border: none;
+  background: transparent url('../images/news__video-play-button.png') no-repeat 8% 50%;
+  margin-bottom: 50px;
+  margin-left: 29px;
+}
+
 .news__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 527px;
   height: 992px;
   margin-right: 50px;
@@ -428,13 +494,13 @@ body {
   width: 527px;
   height: 856px;
   background-image: url('../images/news__slider.png');
+  margin-bottom: 3px;
 }
 
 .footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 113px;
 }
 
 .footer__wrapper {
@@ -444,6 +510,7 @@ body {
 
 .logo--footer {
   margin-left: 61px;
+  background: url('../images/logo__footer.png') no-repeat;
 }
 
 .footer__email {
@@ -465,7 +532,7 @@ body {
 }
 
 .footer__line {
-  margin: 40px 60px 49px 60px;
+  margin: 36px 60px 47px 60px;
   border-top: 1px solid #f5f5f5;
 }
 
@@ -473,11 +540,13 @@ body {
   font-family: "Nunito-Regular";
   font-size: 15px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 18px;
   color: #77777e;
   margin-left: 61px;
 }
 
 .social-buttons--footer {
   margin-right: 61px;
+  width: 184px;
+  align-items: baseline;
 }
